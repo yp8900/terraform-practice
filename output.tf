@@ -1,7 +1,9 @@
+# output.tf in root
+
 output "resource_group_name" {
-  value = azurerm_resource_group.main.name
+  value = module.resource_group.resource_group_name
 }
 
 output "resource_group_location" {
-  value = azurerm_resource_group.main.location
+  value = module.resource_group.resource_group_location
 }
